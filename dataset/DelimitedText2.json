@@ -2,16 +2,16 @@
 	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ADLS_POC_RD",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobFSLocation",
+				"type": "AzureBlobStorageLocation",
 				"folderPath": "csv",
-				"fileSystem": "xml"
+				"container": "rdpoctraining-backup"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
